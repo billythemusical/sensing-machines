@@ -36,11 +36,11 @@ void ofApp::draw()
 {
     ofBackground(0);
 
-//    for(int y = 0; y < grabber.getHeight(); y+=step*2)
-    for(int y = 0; y < grabber.getHeight(); y+=step)
+   for(int y = 0; y < grabber.getHeight(); y+=step*2)
+//     for(int y = 0; y < grabber.getHeight(); y+=step)
     {
-//        for(int x = 0; x < grabber.getWidth(); x+=step*2)
-        for(int x = 0; x < grabber.getWidth(); x+=step)
+       for(int x = 0; x < grabber.getWidth(); x+=step*2)
+//         for(int x = 0; x < grabber.getWidth(); x+=step)
         {
             float r = grabberPix.getColor(x + roundf(sqrt(x*y)), y).r;
             float g = grabberPix.getColor(x, y*2).g;
